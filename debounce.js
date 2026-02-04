@@ -3,9 +3,13 @@ const debounce=(func,delay)=>{
     // that is closure
     let timer;
 
-    return function(){
+    return function(...args){
+        //here ...args mean we are getting arguments as array list
+
+        clearTimeout(timer);
+
         setTimeout(()=>{
-            func()
+            func.apply(this,args)
         },delay)
     }
 }
