@@ -3,7 +3,7 @@
 
 //this keyword in global space represt global object
 //global object
-//in case of browser, global object in browser is windows0
+//in case of browser, global object in browser is windows
 console.log(this)
 
 //this inside a function
