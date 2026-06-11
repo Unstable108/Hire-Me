@@ -1,5 +1,4 @@
 //there is no callbacks
-
 const fs = require("fs");
 
 function readingFile()

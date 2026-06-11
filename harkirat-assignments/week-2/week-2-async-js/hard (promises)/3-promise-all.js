@@ -5,19 +5,33 @@
  */
 
 function wait1(t) {
-
+    return new Promise(function(resolve){
+        setTimeout(resolve,t*1000);
+    })
 }
 
 function wait2(t) {
-
+    return new Promise(function(resolve){
+        setTimeout(resolve,t*1000);
+    })
 }
 
 function wait3(t) {
-
+    return new Promise(function(resolve){
+        setTimeout(resolve,t*1000);
+    })
 }
 
-function calculateTime(t1, t2, t3) {
+async function calculateTime(t1, t2, t3) {
+    let startTime = new Date().getTime();
 
+    //wait to complete all the promise
+    await Promise.all([wait1(t1),wait2(t2),wait3(t3)]);
+
+    let timeTaken = new Date().getTime() - startTime;
+    return timeTaken;
 }
+
+// If all promises resolve then it returns an array with all resolved promises.
 
 module.exports = calculateTime;
