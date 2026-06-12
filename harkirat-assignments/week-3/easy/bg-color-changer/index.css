@@ -1,0 +1,34 @@
+body{
+    font-family: sans-serif;
+    padding: 0 15px;
+    background-color: #f4f4f4;
+}
+
+.color-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; 
+    padding: 0;      
+}
+#buttons{
+    background-color: white;
+    padding: 15px;
+}
+
+#red {
+    background-color: red;
+    color: white; /* Enhances text readability */
+    padding: 10px 20px;
+}
+#green {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
