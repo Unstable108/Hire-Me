@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <ul id="images">
+            <li class="tiger">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-13.png" alt="GeeksforGeeks Logo" width="420" height="100">
+            </li>
+                        <li class="tiger">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-13.png" alt="GeeksforGeeks Logo" width="420" height="100">
+            </li>
+            <li>Google</li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector("#images").addEventListener("click",(e)=>{
+             console.log(e.target);
+             if(e.target.tagName==='IMG')
+             {
+                console.log(e.target.id)
+                let removeIt = e.target.parentNode;
+                removeIt.remove();
+             }
+        })
+    </script>
+</body>
+</html>

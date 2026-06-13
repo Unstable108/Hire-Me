@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Progation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <h1> Event Progation</h1>
+        <h2>Event Bubbling (default): </h2>
+        <h3>Like bubbles, here event goes from below to above,
+            meaning from inside to outside div
+        </h3>
+        <h2>Event Capturing : </h2>
+        <h3>
+            Here events goes from above to below
+            from outside to inside div
+        </h3>
+    </div>
+    <div id="main">
+        <ul>
+            <li id="home">Home</li>
+            <li id="about">About</li>
+            <li id="myself">Myself</li>
+        </ul>
+    </div>
+    <script src="eventPropogation.js"></script>
+</body>
+</html>

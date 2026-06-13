@@ -1,0 +1,52 @@
+/* Reset margins and set a clean font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Style the explanation section */
+div:first-of-type {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+h1 { color: #333; }
+h2 { color: #0066cc; margin-top: 15px; }
+h3 { color: #555; font-weight: normal; font-size: 1rem; }
+
+/* Style the Outer Container (#main) */
+#main {
+    background-color: #ffe6e6; /* Light red to distinguish it */
+    border: 3px solid #ff4d4d;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Style the List */
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the Inner List Items (clickable targets) */
+li {
+    background-color: #e6f2ff; /* Light blue to distinguish items */
+    border: 2px solid #3399ff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer; /* Makes it look clickable */
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for items */
+li:hover {
+    background-color: #b3d7ff;
+}
