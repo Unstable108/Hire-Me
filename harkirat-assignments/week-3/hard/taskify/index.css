@@ -1,0 +1,15 @@
+.todo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#easy{
+    background-color: antiquewhite;
+}
+#medium{
+    background-color: blueviolet;
+}
+#hard{
+    background-color: green;
+}
